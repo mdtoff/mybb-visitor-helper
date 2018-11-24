@@ -25,9 +25,9 @@ if (isset($templatelist)) {
 }
 
 if (defined('THIS_SCRIPT')) {
-	if (THIS_SCRIPT == 'showthread.php') {
+    if (THIS_SCRIPT == 'showthread.php') {
         $templatelist .= 'visitor_helper';
-	}
+    }
 }
 
 if (!defined('IN_ADMINCP')) {
