@@ -123,7 +123,7 @@ function visitor_helper() {
     global $mybb;
 
     if ($mybb->user['uid'] == 0) {
-        global $lang, $theme, $templates, $visitor_helper, $visitor_helper_styles;
+        global $lang, $theme, $templates, $visitor_helper;
 
         $lang->load('visitor_helper');
 
