@@ -15,8 +15,8 @@ if (!defined('IN_MYBB')) {
 }
 
 define('ROOT', str_replace("\\", "/", MYBB_ROOT));
-define('PLUG_ROOT', ROOT . 'inc/plugins');
-define('THIS_PLUG_ROOT', PLUG_ROOT . '/visitor_helper');
+define('PLUG_ROOT', ROOT . 'inc/plugins/');
+define('THIS_PLUG_ROOT', PLUG_ROOT . 'visitor_helper/');
 
 global $templatelist;
 
@@ -133,7 +133,7 @@ function visitor_helper() {
 
 function visitor_helper_temp($temp, $ex = 'tpl') {
     $temp = trim($temp);
-    $temp = THIS_PLUG_ROOT . "/templates/{$temp}.{$ex}";
+    $temp = THIS_PLUG_ROOT . "templates/{$temp}.{$ex}";
 
     if (file_exists($temp)) {
         return file_get_contents($temp);
