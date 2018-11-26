@@ -11,7 +11,7 @@ Visitor helper on the thread display page.
 
 ## Versioning
 
-I use [SemVer](http://semver.org/) for versioning.
+I use [SemVer](https://semver.org/) for versioning.
 
 ## Authors
 
